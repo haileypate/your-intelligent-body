@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Antic+Didone&Open+Sans+Condensed");
+
+/*
+color notes: 
+
+light green: #808C56
+gold: #FFBF75
+
+*/
+
+html {
+  font-family: "Open Sans Condensed";
+}
+
+body {
+  background-color: #282828;
+  color: whitesmoke; 
+}
+
+a {
+  color: whitesmoke;
+}
+
+#site-wrapper {
+  background-color: #343844;
+  background-image: url('../img/barton-springs-fade-300w.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: whitesmoke; 
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+
+button {
+  border: solid 0.5px  #F2C025;
+  position: fixed;
+  right: 0;
+  padding: 1rem;
+  background-color: rgba(44, 42, 28, 0.5);
+  color: #F2C025;
+}
+
+h1 {
+  font-family: "Antic Didone";
+  color: #F2C025;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #F2C025;
+  font-size: 2rem;
+  font-weight: 400;
+}
+ 
+article {
+ padding-left: 1rem;
+ padding-right: 1rem;
+}
+
+#hi {
+  padding-top: 200px;
+  text-align: center;
+}
+
+#hi header {
+  display: inline-block;
+  background-color: rgba(20,19,13,.3);
+}
+
+.betsy-photo {
+  padding-top: 2rem;
+  max-height: 300px;
+  text-align: center;
+}
+
+#hi header .wrapper {
+  margin: 1rem;
+}
+
+#hi header .wrapper p {
+  font-size: 1.3rem;
+  margin: 0 auto;
+}
+
+#hi .intro {
+  padding: 1rem;
+  text-align: left;
+  /* background-color: green; */
+}
+
+.intro p:first-of-type {
+  color: #9af7cb;
+}
+
+.intro p:nth-of-type(2) {
+  color:#4cf383;
+}
+
+.intro p:nth-of-type(3) {
+  color:#cbe083;
+}
+
+.backdrop {
+  background-color: rgba(20,19,13,.3);
+}
+
+#what-i-do {
+  /* background: linear-gradient(to bottom, #343837, #223815,  #343837); */
+}
+
+#sessions {
+  color: #9af7cb;
+}
+
+.price-header {
+  color: whitesmoke;
+  margin-bottom: 5px;
+}
+.price {
+  color: whitesmoke;
+  margin-top: 5px;
+}
+
+.casa-de-luz, .appt {
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+#how-i-got-here {
+  padding-top: 200px;
+}
+
+footer {
+  border-top: solid black 0.2px;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-note {
+  padding-bottom: 10px;
+  color:#cbe083;
+}
+
+.footer-logo {
+  padding-top: 20px;
+  max-height: 50px;
+}
+
+footer nav {
+ display: flex;
+ flex-direction: column;
+}
+
+footer nav a {
+  color:#F2C025;
+}
+
+@media (min-width: 601px) {
+  #site-wrapper {
+    background-image: url('../img/barton-springs-fade.jpg');
+    /* color: whitesmoke; */
+    /* padding: 200px; */
+    /* padding-top: 500px;
+    margin: 0 auto; */
+  }
+}
+
+@media (min-width: 1201px) {
+  #site-wrapper {
+  }
+}
