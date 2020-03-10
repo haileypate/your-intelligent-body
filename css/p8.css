@@ -40,6 +40,7 @@ button {
   padding: 1rem;
   background-color: rgba(44, 42, 28, 0.5);
   color: #F2C025;
+  display: none; 
 }
 
 h1 {
@@ -77,6 +78,7 @@ article {
 
 #hi header .wrapper {
   margin: 1rem;
+  color: #62dca2;
 }
 
 #hi header .wrapper p {
@@ -84,22 +86,22 @@ article {
   margin: 0 auto;
 }
 
-#hi .intro {
+#hi #intro {
   padding: 1rem;
   text-align: left;
   /* background-color: green; */
 }
 
-.intro p:first-of-type {
+#intro p:first-of-type {
   color: #9af7cb;
 }
 
-.intro p:nth-of-type(2) {
-  color:#4cf383;
+#intro p:nth-of-type(2) {
+  color:#9af7cb;;
 }
 
-.intro p:nth-of-type(3) {
-  color:#cbe083;
+#intro p:nth-of-type(3) {
+  color:#9af7cb;;
 }
 
 .backdrop {
@@ -107,6 +109,7 @@ article {
 }
 
 #what-i-do {
+  color: #9af7cb;
   /* background: linear-gradient(to bottom, #343837, #223815,  #343837); */
 }
 
@@ -115,11 +118,11 @@ article {
 }
 
 .price-header {
-  color: whitesmoke;
+  color: #9af7cb;
   margin-bottom: 5px;
 }
 .price {
-  color: whitesmoke;
+  color: #9af7cb;;
   margin-top: 5px;
 }
 
@@ -129,7 +132,7 @@ article {
 }
 
 #how-i-got-here {
-  padding-top: 200px;
+  padding-top: 2rem;
 }
 
 footer {
