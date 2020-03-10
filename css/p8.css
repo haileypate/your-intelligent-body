@@ -14,11 +14,11 @@ html {
 
 body {
   background-color: #282828;
-  color: whitesmoke; 
+  color:#9af7cb;
 }
 
 a {
-  color: whitesmoke;
+  color: #9af7cb;
 }
 
 #site-wrapper {
@@ -26,11 +26,10 @@ a {
   background-image: url('../img/barton-springs-fade-300w.jpg');
   background-size: contain;
   background-repeat: no-repeat;
-  color: whitesmoke; 
   min-width: 300px;
   max-width: 400px;
   margin: 0 auto;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 button {
@@ -82,73 +81,52 @@ article {
 }
 
 #hi header .wrapper p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0 auto;
 }
 
 #hi #intro {
-  padding: 1rem;
+  padding: 2rem;
   text-align: left;
   /* background-color: green; */
-}
-
-#intro p:first-of-type {
-  color: #9af7cb;
-}
-
-#intro p:nth-of-type(2) {
-  color:#9af7cb;;
-}
-
-#intro p:nth-of-type(3) {
-  color:#9af7cb;;
 }
 
 .backdrop {
   background-color: rgba(20,19,13,.3);
 }
 
-#what-i-do {
-  color: #9af7cb;
-  /* background: linear-gradient(to bottom, #343837, #223815,  #343837); */
+.front-page {
+  padding: 2rem;
 }
 
-#sessions {
-  color: #9af7cb;
-}
 
 .price-header {
-  color: #9af7cb;
   margin-bottom: 5px;
 }
 .price {
-  color: #9af7cb;;
   margin-top: 5px;
 }
 
 .casa-de-luz, .appt {
-  color: whitesmoke;
   font-weight: 600;
 }
 
-#how-i-got-here {
-  padding-top: 2rem;
-}
 
 footer {
   border-top: solid black 0.2px;
+  padding-top: 50px;
   font-size: 1rem;
   text-align: center;
   margin-top: 50px;
 }
 
 .footer-note {
-  padding-bottom: 10px;
+  padding-bottom: 50px;
   color:#cbe083;
 }
 
 .footer-logo {
-  padding-top: 20px;
+  padding-top: 30px;
   max-height: 50px;
 }
 
@@ -159,6 +137,7 @@ footer nav {
 
 footer nav a {
   color:#F2C025;
+  margin-bottom: 5px;
 }
 
 @media (min-width: 601px) {
