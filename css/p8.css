@@ -55,18 +55,24 @@ h2 {
 }
  
 article {
- padding-left: 1rem;
- padding-right: 1rem;
+ padding-left: 2rem;
+ padding-right: 2rem;
 }
 
 #hi {
-  padding-top: 200px;
   text-align: center;
+  padding-top: 200px;
+  
 }
 
 #hi header {
   display: inline-block;
   background-color: rgba(20,19,13,.3);
+
+}
+
+#hi p {
+  text-align: left;
 }
 
 .betsy-photo {
@@ -78,6 +84,7 @@ article {
 #hi header .wrapper {
   margin: 1rem;
   color: #62dca2;
+  text-align: center;
 }
 
 #hi header .wrapper p {
@@ -85,12 +92,7 @@ article {
   /* margin: 0 auto; */
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-#hi #intro {
-  padding: 2rem;
-  text-align: left;
-  /* background-color: green; */
+  text-align: center;
 }
 
 .backdrop {
