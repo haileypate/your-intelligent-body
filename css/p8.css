@@ -30,16 +30,35 @@ a {
   max-width: 400px;
   margin: 0 auto;
   font-size: 1.5rem;
+  display: block;
 }
 
 button {
-  border: solid 0.5px  #F2C025;
-  position: fixed;
-  right: 0;
+  border: solid 0.5px rgba(44, 42, 28, 0.5);
+  display: inline-block;
   padding: 1rem;
   background-color: rgba(44, 42, 28, 0.5);
   color: #F2C025;
+}
+
+button.book-now {
+  border: solid 0.5px  #F2C025;
+  color: #F2C025;
+  position: fixed;
+  right: 0;
   display: none; 
+}
+
+button.show-menu {
+  background-color: rgba(44, 42, 28, 0.7);
+  position: relative;
+  max-width: 100px;
+  top: 10px;
+  left: 10px;
+}
+
+button.show-nav img {
+  max-width: 50px;
 }
 
 h1 {
@@ -61,7 +80,7 @@ article {
 
 #hi {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 80px;
   
 }
 
