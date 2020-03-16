@@ -24,12 +24,37 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div id="site-wrapper">
-    <button class="show-menu">MENU</button>
-    <button class="book-now">Book now</button>
-    <article id="hi">
+  <div id="site-wrapper" tabindex="-1">
+    <button class="show-menu" id="show-top-menu" tabindex="-1">MENU</button>
+    <button class="book-now" tabindex="-1">Book now</button>
+    
+    <noscript>
+        <nav id="top-menu" class="menu-visible" tabindex="1">
+          <ul>
+            <li><a class="top-menu-links" href="#" tabindex="2">Welcome</a></li>
+            <li><a class="top-menu-links" href="#" tabindex="2">About what I do</a></li>
+            <li><a class="top-menu-links" href="#" tabindex="2">Massage sessions</a></li>
+            <li><a class="top-menu-links" href="#" tabindex="2">Location and hours</a></li>
+            <li><a class="top-menu-links" href="#" tabindex="2">Schedule appointment</a></li>
+            <!--TO DO: At the book appointment landing spot, we'll need an option for the screen reader to contact betsy to schedule directly in case of difficulty using square appts-->
+          </ul>
+        </nav>
+    </noscript>
+
+  <nav id="top-menu" class="menu-invisible" tabindex="1">
+    <ul>
+      <li><a class="top-menu-links" href="#" tabindex="2">Welcome</a></li>
+      <li><a class="top-menu-links" href="#" tabindex="2">About what I do</a></li>
+      <li><a class="top-menu-links" href="#" tabindex="2">Massage sessions</a></li>
+      <li><a class="top-menu-links" href="#" tabindex="2">Location and hours</a></li>
+      <li><a class="top-menu-links" href="#" tabindex="2">Schedule appointment</a></li>
+      <!--TO DO: At the book appointment landing spot, we'll need an option for the screen reader to contact betsy to schedule directly in case of difficulty using square appts-->
+    </ul>
+  </nav>
+
+    <article id="hi" tabindex="10">
       <header>
-        <img class="betsy-photo" src="img/betsy-photo-by-helen-olds.jpg">
+        <img class="betsy-photo" src="img/betsy-photo-by-helen-olds.jpg" alt="This full color image is a portrait of Betsy Reymond. She is seated in front of open windows at her kitchen table. Her hands are folded and rest on the table in front of her. She is facing the camera directly with a small, warm smile.">
         <div class="wrapper">
           <h1>Hi, I'm Betsy.</h1>
           <p>I am a Licensed Massage Therapist<br>in Austin, Texas.</p>
@@ -39,11 +64,11 @@
         <p>My story includes a multitude of blessings in the form of three lovely grown sons, cherished family, friends and a wide variety of experiences both sweet and challenging.</p>
         <p>These experiences have sensitized me to both joy and sorrow.</p>
         <p>My intention is to utilize this sensitivity in my work with clients.</p>
-        <p>For more of my story, journey <a href="#how-i-got-here">here</a>.</p>
+        <p>For more of my story, journey <a href="#how-i-got-here" tabindex="-1">here</a>.</p>
  
     </article>
 
-  <article class="front-page" id="what-i-do">
+  <article class="front-page" id="what-i-do" tabindex="30">
 
     <h2>About what I do</h2>
 
@@ -53,7 +78,7 @@
   
   </article>
 
-  <section class="front-page" id="sessions">
+  <section class="front-page" id="sessions" tabindex="40">
     <h2>Massage sessions</h2>
     <h4 class="price-header">One hour session:</h4>
     <p class="price">$90.00</p>
@@ -62,24 +87,30 @@
     <p>24 Hour cancellation policy, please</p>
   </section>
 
-  <section class="front-page">
+  <section class="front-page" tabindex="50">
     <h2>Office location</h2>
+    <h3>Casa de Luz</h3>
     <p class="casa-de-luz">1701 Toomey Avenue Austin, TX 78704</p>
     <p>The North Room, which is on the right as you walk straight ahead into the complex</p>
     <p>For parking, there is City-owned metered parking across the street.</p>
   </section>
   
-  <section class="front-page">
+  <section class="front-page" tabindex="60">
     <h2>Hours</h2>
     <p><span class="appt">By appointment.</span></p>
     <p>All day Sundays, Mondays, Wednesdays; Fridays after 2:00.</p>
   </section>
+
+  <section class="schedule-appointment front-page" tabindex="70">
+    <p>To schedule an appointment online, visit my scheduling page <a href="#" target="_blank">here</a>.</p>
+  </section>
     
  
-<article class="front-page" id="how-i-got-here">
+<article class="front-page" id="how-i-got-here" tabindex="-1">
   <h1>How I got here...</h1>
   <p>While living in Grand Rapids Michigan in 2014, I became a Physical Therapy client after a hamstring injury. My PT, Rachel Davies, had been trained in the John Barnes’ Myofascial Release (MFR)  approach. My life was in transition physically and emotionally at the time. MFR was a very supportive modality and it fit in well with the mindful, body-centered psychology (Hakomi) training which I was undertaking. Rachel sensed my potential affinity for MFR work and suggested that I consider it as a career path. Although I had never even had a pleasant massage in my life, with Rachel’s encouragement and an impulse to be of service, I went to massage school in Kalamazoo Michigan and became a licensed massage therapist. I graduated in 2016, then returned to my home state of Texas. I have taken 184 hours of continuing education since that time, all in the John Barnes’ Myofascial Release method.</p>
 </article>
+<!-- element needed here to return screenreaders back to table of contents to menu element needs-->
  
     
     
@@ -87,15 +118,20 @@
         
  
 
-<footer>
-  <p>Your body is intelligent.</p>
-  <nav>
-    <a href="#book">Schedule a massage</a>
-    <a href="#casa-de-luz">Location</a>
-    <a href="#book">Contact</a>
+<footer tabindex="80">
+  <p tabindex="-1" role="complementary">Your body is intelligent.</p>
+  <nav id="bottom-menu" role="navigation">
+    <ul>
+      <li><a class="top-menu-links" href="#">Welcome</a></li>
+      <li><a class="top-menu-links" href="#">About what I do</a></li>
+      <li><a class="top-menu-links" href="#">Massage sessions</a></li>
+      <li><a class="top-menu-links" href="#">Location and hours</a></li>
+      <li><a class="top-menu-links" href="#" target="_blank">Schedule appointment </a></li>
+      <!--TO DO: At the book appointment landing spot, we'll need an option for the screen reader to contact betsy to schedule directly in case of difficulty using square appts-->
+    </ul>
   </nav>
   
-  <img class="footer-logo" src="img/yib-avatar.png">
+  <img class="footer-logo" src="img/yib-avatar.png" alt="This icon is a rectangular representation of the Fibonacci sequence. It is colored by a gradient of green on the lower left and white towards the upper right.">
   <p class="footer-note">“Rest, dear one. Timing is never off”</p>
   
 </footer>

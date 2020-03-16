@@ -8,6 +8,10 @@ gold: #FFBF75
 
 */
 
+.no-js {
+  visibility: hidden;
+}
+
 html {
   font-family: "Open Sans Condensed";
 }
@@ -17,8 +21,20 @@ body {
   color:#9af7cb;
 }
 
-a {
+a, a:focus {
   color: #9af7cb;
+}
+
+a:visited {
+  color: #9af7cb;
+}
+
+a:hover, a:focus {
+  color: blue;
+}
+
+a:active {
+  color: orange;
 }
 
 #site-wrapper {
@@ -57,8 +73,52 @@ button.show-menu {
   left: 10px;
 }
 
-button.show-nav img {
-  max-width: 50px;
+.menu-invisible {
+  position: absolute;
+  z-index: -99999;
+}
+
+.menu-visible {
+  position: inherit;
+}
+
+#top-menu {
+  text-align: center;
+  background-color: rgba(44, 42, 28, 0.8);
+}
+
+#top-menu ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+#top-menu ul li {
+  margin: 1rem auto;
+}
+
+#top-menu ul li:first-child a {
+  margin-top: 10px;
+}
+
+#top-menu ul li:last-child a {
+  border: solid 1px #F2C025;
+  margin-bottom: 10px;
+}
+
+.top-menu-links {
+  text-decoration: none;
+  display: inline-block;
+  min-width: 300px;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+}
+
+.top-menu-links:hover {
+  background-color: #F2C025;
+}
+
+.top-menu-links:hover {
+  color: #282828;
 }
 
 h1 {
@@ -80,18 +140,31 @@ article {
 
 #hi {
   text-align: center;
-  padding-top: 80px;
-  
+  /* background: conic-gradient(
+    from -94deg at 90% 390px, 
+    #343844,
+    #343844,
+    #fff, 
+    #343844, 
+    #343844 360deg
+  ); */
 }
 
 #hi header {
   display: inline-block;
   background-color: rgba(20,19,13,.3);
-
 }
 
 #hi p {
+  font-family: "Antic Didone";
   text-align: left;
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#hi header p {
+  font-family: inherit;
 }
 
 .betsy-photo {
@@ -122,7 +195,6 @@ article {
   padding: 2rem;
 }
 
-
 .price-header {
   margin-bottom: 5px;
 }
@@ -134,11 +206,10 @@ article {
   font-weight: 600;
 }
 
-
 footer {
   border-top: solid black 0.2px;
   padding-top: 50px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   margin-top: 50px;
 }
@@ -153,14 +224,14 @@ footer {
   max-height: 50px;
 }
 
-footer nav {
+#bottom-menu {
  display: flex;
  flex-direction: column;
 }
 
-footer nav a {
-  color:#F2C025;
-  margin-bottom: 5px;
+#bottom-menu ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 @media (min-width: 601px) {
